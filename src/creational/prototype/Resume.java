@@ -9,7 +9,7 @@ public class Resume implements Cloneable {
     private String name;        // 姓名
     private String education;   // 学历
     private String skills;      // 技能
-    private String targetCompany; // 目标公司
+    private Company targetCompany; // 目标公司
 
     public Resume(String name, String education, String skills) {
         this.name = name;
@@ -17,7 +17,7 @@ public class Resume implements Cloneable {
         this.skills = skills;
     }
 
-    public void setTargetCompany(String targetCompany) {
+    public void setTargetCompany(Company targetCompany) {
         this.targetCompany = targetCompany;
     }
 
@@ -36,6 +36,6 @@ public class Resume implements Cloneable {
         System.out.println("姓名：" + name);
         System.out.println("学历：" + education);
         System.out.println("技能：" + skills);
-        System.out.println("目标公司：" + targetCompany);
+        System.out.println("目标公司：" + (targetCompany != null ? targetCompany.toString() : "无"));
     }
 }

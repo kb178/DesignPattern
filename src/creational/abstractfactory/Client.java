@@ -1,6 +1,21 @@
 package creational.abstractfactory;
 
 /**
+ *
+ * AbstractFactory 定义能够生产什么产品的工厂接口
+ *
+ * AbstractProductA、AbstractProductB 产品接口
+ *
+ * ProductA1、ProductA2、ProductB1、ProductB2 实现的产品接口的 产品实现
+ *
+ * ConcreteFactory1、ConcreteFactory2具体工厂，能够去生产一系列产品
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  * 客户端测试类
  * 演示如何使用抽象工厂模式
  */
